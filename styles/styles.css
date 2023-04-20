@@ -61,6 +61,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  padding: 0;
 }
 
 body.appear {
@@ -89,8 +90,8 @@ h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 hr {

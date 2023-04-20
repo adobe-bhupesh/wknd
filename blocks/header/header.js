@@ -1,5 +1,6 @@
 import { getMetadata, decorateIcons } from '../../scripts/lib-franklin.js';
 import { createTopBar } from './topbar.js';
+import { createHeader } from './menu.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
@@ -100,10 +101,13 @@ export default async function decorate(block) {
 
   if (resp.ok) {
     const html = await resp.text();
-    debugger;
     // block.innerHTML = html;
     const countryEl = createTopBar();
     block.append(countryEl);
+    const headerItems = createHeader(html);
+    block.append(headerItems);
+    // block.insertAdjacentElement('afterend', html);
+    // block.append(html);
 
     // decorate nav DOM
     //   const nav = document.createElement('nav');

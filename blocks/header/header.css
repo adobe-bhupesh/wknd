@@ -1,3 +1,190 @@
+
+header.header-wrapper {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+header .header {
+  position: relative;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+}
+
+header .top-bar-wrapper {
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+header .header .top-bar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  max-width: 1280px;
+  max-height: 30px;
+  margin: 0 auto;
+}
+
+header .header .top-bar .welcome-msg {
+  flex: 1;
+  text-align: right;
+  font-size: 14px;
+}
+
+header .top-bar .lang-nav {
+  font-size: 1.2rem;
+  background-color: #303030;
+  position: absolute;
+  right: 0;
+  top: 31px;
+  z-index: 2;
+}
+
+header .top-bar .lang-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .top-bar .lang-list .lang-list-item {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-bottom: 1px solid #494949;
+}
+
+header .top-bar .lang-list .lang-list-item:hover {
+  cursor: pointer;
+  background-color: #4c4c4c;
+}
+
+header .top-bar .lang-list .lang-list-item .lang-list-icon {
+  margin-right: 8px;
+  width: 24px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+header .top-bar .lang-list .lang-list-item .lang-list-icon svg {
+  width: 24px;
+  height: auto;
+}
+
+header .lang-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border-radius: 0;
+  padding: 0px 10px;
+  max-width: 300px;
+}
+
+header .lang-button .lang-list-icon {
+  margin-right: 8px;
+  width: 24px;
+  height: auto;
+}
+header .lang-button .lang-list-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+header .lang-list-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/*
+  Section for header area
+*/
+.header .wknd-header-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.header .wknd-header-wrapper  .wknd-logo {
+  flex: 1;
+}
+
+.header .wknd-header-wrapper  .wknd-logo img {
+  max-width: 128px;  
+  height: auto;
+}
+
+.header .wknd-header-wrapper .wknd-menu {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .wknd-header-wrapper .wknd-menu ul{
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.header .wknd-header-wrapper .wknd-menu ul li a {
+  color: #202020;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 17px;
+  text-decoration: none;
+}
+
+.header .wknd-header-wrapper .wknd-menu ul li a:hover {
+  background-color: #ffea00;
+}
+
+/*
+  Styles for search items
+*/
+.header .wknd-header-wrapper .search-item {
+  flex: 1;
+  display: block;
+  position: relative;
+  background-color: transparent;
+  max-width: 200px;
+}
+
+.header .wknd-header-wrapper .search-item .icon-search {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: translate(5px, 5px) rotateY(180deg);
+  
+}
+
+.header .wknd-header-wrapper .search-item .search-input {
+  position: relative;
+  background: hsla(0,0%,92.2%,.5411764705882353);
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.header .wknd-header-wrapper .search-item .search-input:focus {
+  border: 1px solid black;
+}
+
+
 /*
 header and nav layout
 header .nav-wrapper {
